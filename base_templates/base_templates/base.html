@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>{% block title %}SIS{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Southern Institute of Studies</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'lecturer_list' %}">Lecturers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Southern Institute of Studies</p>
+    </footer>
+</body>
+</html>

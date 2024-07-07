@@ -1,0 +1,12 @@
+﻿{% extends 'base_templates/base.html' %}
+
+{% block title %}Lecturers{% endblock %}
+
+{% block content %}
+<h2>Lecturers</h2>
+<ul>
+    {% for lecturer in lecturers %}
+    <li>{{ lecturer.name }} - {{ lecturer.email }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
