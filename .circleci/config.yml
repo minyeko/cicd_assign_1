@@ -13,6 +13,11 @@ jobs:
       - checkout:
           path: ~/project
       - python/install-packages
+      # Install dependencies
+      - run:
+          name: Install dependencies
+          command: |
+            pip install -r requirements.txt
       - run:
           name: Run tests
           command: python manage.py test
