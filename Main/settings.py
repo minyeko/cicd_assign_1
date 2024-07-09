@@ -127,6 +127,8 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
     'http://localhost:3000', '127.0.0.1', 'localhost', 'https://*.vercel.app'
 ]
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mis-assignment1-backend.vercel.app']
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
