@@ -44,7 +44,21 @@ INSTALLED_APPS = [
     'parents',
     'tution',
     'students',
+    'accounts',
+    'rest_framework',
+    'rest_framework.authtoken'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  # Add this line
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'EXCEPTION_HANDLER': 'accounts.exception_handler.custom_exception_handler'
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

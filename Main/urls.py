@@ -19,5 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lecturers/', include('lecturers.urls'))
+    path('lecturers/', include('lecturers.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),  # Add this line
+    path('accounts/', include('accounts.urls')),  # Add this line if you create a custom app
+    path('api-auth/', include('rest_framework.urls')),  # Optional for browsable API login/logout
+    path('api/', include('accounts.urls')),
 ]
