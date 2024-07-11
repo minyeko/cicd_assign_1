@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'tution',
     'students',
     'accounts',
+    'marks',
+    'attendances',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
