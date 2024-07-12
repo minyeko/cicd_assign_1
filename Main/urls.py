@@ -23,6 +23,7 @@ urlpatterns = [
     path('api/', include('lecturers.urls')),
     path('api/', include('students.urls')),
     path('api/', include('parents.urls')),
+    path('api/', include('grades.urls')),
     #path('api/', include('marks.urls')),
     path('api/', include('attendances.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # Add this line
