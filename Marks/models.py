@@ -1,3 +1,4 @@
+# marks/models.py
 from django.db import models
 from students.models import Student
 
@@ -7,4 +8,4 @@ class Mark(models.Model):
     mark = models.FloatField()
     
     def __str__(self):
-        return f"{self.student} {self.course_name} {self.mark}"
+        return f"{self.student} - {self.course_name}: {self.mark}"
