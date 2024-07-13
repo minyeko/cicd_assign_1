@@ -24,7 +24,6 @@ urlpatterns = [
     path('api/', include('students.urls')),
     path('api/', include('parents.urls')),
     path('api/', include('grades.urls')),
-    #path('api/', include('marks.urls')),
     path('api/', include('attendances.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # Add this line
     path('accounts/', include('accounts.urls')),  # Add this line if you create a custom app

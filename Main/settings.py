@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'tution',
     'students',
     'accounts',
-    #'marks',
     'grades',
     'attendances',
     'rest_framework',
