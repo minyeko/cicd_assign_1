@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'accounts',
     'grades',
     'attendances',
+    'chatroom',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
