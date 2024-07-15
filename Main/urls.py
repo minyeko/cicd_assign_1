@@ -25,6 +25,7 @@ urlpatterns = [
     path('api/', include('parents.urls')),
     path('api/', include('grades.urls')),
     path('api/', include('attendances.urls')),
+    path('api/', include('chatroom.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # Add this line
     path('accounts/', include('accounts.urls')),  # Add this line if you create a custom app
     path('api-auth/', include('rest_framework.urls')),  # Optional for browsable API login/logout
